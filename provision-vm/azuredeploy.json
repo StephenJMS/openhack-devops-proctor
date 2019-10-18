@@ -67,7 +67,7 @@
         },
         "sshKeyData": {
             "type": "string",
-            "defaultValue": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCggG9tI4+rtMouQh+/rrsbPydED69Pffh0uGXrd+Lw+7L1QLblF1Wqkbs3d6YPk5hQM0kM/wPz7e4BYzy3dQCOp7PudI5Pfkwogj9OTF366Vw99JTcoloWSPNHtk1ju9id1J8rAXPKs6yJ9p0JOHkkVo30IP8tfzUdzCsSkDfXojj55w93ZErJQoY3STPXq15l8629Xovk37FNTgy34DitSHzFdoaRlXIs7n4ZL7rlzbBDJao36LwI4GWgTaZXlyLOFAOQtEUtVqF3+3bf2Gj9fHBUiDo8ZG2fyhpdqDKlCTHCL8IkCIey5svvLBW/VLuwTPXNuGd5JDauSGxezNfp oguzp@Oguzs-MBP.guest.corp.microsoft.com",
+            "defaultValue": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCmDVTVSSuL6GTk3S9pO0rahGjsw5KbhWBuG9psEBIl/UftzAqXVQ1ECufIPJuAM+/SH9uUQhjqIqr32kNbSfsD87Xwcyd602sfwb0Wra7iHC9rgooHxvDFuxC6hLG9b/QrOuceQ2kIGKMJVhNbFYC03wKGgrGF+NofqgmOwEZAP7T458+nP68glviKtG52c3FdB1hDehUonVJJ4v6ddC86efEmC+IA49NarQKdWL3jB0DW8vq84FoOWjvSf3HS2H3yjy7zFWWxaCKtmkBjES6Bm46HQmADHFS6lQ8fz/KbrcdSfmadwOAk7eN1PmsLO1HsnF2O8g774+QvrjOW5SsD stephenj@DESKTOP-77TES3N",
             "metadata": {
               "description": "SSH rsa public key file as a string."
             }
@@ -119,7 +119,7 @@
         "sshKeyPath": "[concat('/home/',parameters('adminUsername'),'/.ssh/authorized_keys')]",
         "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
         "gitBranch": "[parameters('gitBranch')]",
-        "gitUri": "[concat('https://raw.githubusercontent.com/Azure-Samples/openhack-devops-proctor/',variables('gitBranch'),'/provision-vm/proctorVMSetup.sh')]"
+        "gitUri": "[concat('https://raw.githubusercontent.com/StephenJMS/openhack-devops-proctor/',variables('gitBranch'),'/provision-vm/proctorVMSetup.sh')]"
     },
     "resources": [
         {
